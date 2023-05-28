@@ -1,0 +1,30 @@
+
+
+.section {
+  padding: 40px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #050f23;
+}
+
+.text-secondary {
+  color: #040810;
+}
+
+.custom-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFBF00;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.custom-btn:hover {
+  background-color: #dda80b;
+}

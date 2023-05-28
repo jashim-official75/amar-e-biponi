@@ -1,0 +1,94 @@
+
+$xd-1700:"only screen and (max-width : 1746px)";
+$xd-1500:"only screen and (max-width : 1529px)";
+$sm-816: "only screen and (max-width : 816px) and (min-width:768px)";
+$sm-532: "only screen and (max-width:532px)";
+$extralg-desktop: "only screen and (max-width : 1499px)";
+$xllg-desktop: "only screen and (max-width : 1400px)";
+$mediumlg-desktop: "only screen and (max-width : 1215px) and (min-width:1024px)";
+$large-desktop1: "only screen and (max-width : 1169px)";
+$large-desktop: "only screen and (max-width : 1199px)";
+$media-desktop: "only screen and (max-width : 1024px)";
+$medium-desktop: "only screen and (max-width : 991px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 495px)";
+$media-mobile-xs: "only screen and (max-width : 375px)";
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1746PX
+// =============================
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1529PX
+// =============================
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1499PX
+// =============================
+
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1400PX
+// =============================
+
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1215PX
+// =============================
+
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1169PX
+// =============================
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1199PX
+// =============================
+
+
+// =============================
+//MEDIA-DESKTOP MAX-WIDTH:1024PX
+// =============================
+
+
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:991px
+// =============================
+
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:816PX
+// =============================
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:768PX
+// =============================
+@media #{$media-tablet}
+{
+    #header_area nav ul li {
+        padding-left: 1.2rem;
+    }
+    #header_area .logo img {
+        width: 150px;
+    }
+}
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:600PX
+// =============================
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:532PX
+// =============================
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:495PX
+// =============================
+
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:375PX
+// ===========================
+
+
