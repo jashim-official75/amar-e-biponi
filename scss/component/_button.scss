@@ -1,0 +1,23 @@
+.submit-btn
+{
+    padding:1.6rem 3rem;
+    background: $primary-color;
+    @include border-radius(0.7rem);
+}
+.submit-btn:hover
+{
+    background: $secondary-color;
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .custom-btn:hover {
+    background-color: $secondary-color;
+  }

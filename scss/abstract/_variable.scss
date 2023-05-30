@@ -6,12 +6,13 @@
 // BASIC COLOR
 // ===================================== //
 $primary-color:#FFBF00;
-$secondary-color:#dda80b;
-$secondary-color: #343434;
+$primary-color-1:#dda80b;
+$secondary-color: #ff9007;
 $dark-blue:#050f23;
 $text-color:#555555;
 $dark-gray:#AEAEAE;
 $light-gray:#F5F5F5;
+$light-gray-1:#f1f1f1fc;
 
 // ===================================== //
 // DARK-VARIANT
@@ -58,6 +59,6 @@ $gradient: linear-gradient($dark-color-3,$dark-color-5);
 // FONT VARIABLES
 // ===================================== //
 
-$montserrat: 'Montserrat', sans-serif;
-
+$poppins: 'Poppins', sans-serif;
+$roboto: 'Roboto', sans-serif;
 

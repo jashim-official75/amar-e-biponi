@@ -16,15 +16,26 @@
   color: #040810;
 }
 
-.custom-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #FFBF00;
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
+.small-text
+{
+  font-size: clamp(1.2rem , 2vw , 1.6rem);
 }
 
-.custom-btn:hover {
-  background-color: #dda80b;
+.gap-10
+{
+  gap: 1rem;
+}
+.flex_center 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.small-icon 
+{
+  font-size: 1.6rem;
+  width: 3rem;
+  width: 3rem;
+  @extend .flex_center;
+ 
 }

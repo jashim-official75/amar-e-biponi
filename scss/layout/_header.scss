@@ -1,69 +1,89 @@
-#header_area {
-    background: $white-color;
-    @include box-shadow($shadow);
-    // padding: 1.5rem;
-    .logo 
-    {
-        img 
+#header_area 
+{
+    .header_top {
+        padding: 1rem 0;
+        background: $light-gray;
+        .order_message 
         {
-            width: 180px;
+           color: $text-color;
         }
-    }
-    .text_logo {
-        font-size: clamp(1.6rem, 5vw, 3rem);
-        font-weight: 900;
-        text-transform: uppercase;
-        color: $dark-color;
-    }
-    nav {
-        ul 
+        .order_info 
         {
-            li 
+            .list_items 
             {
-                padding-left: 5rem;
-                &:last-child
+                
+                a 
                 {
-                    padding-right: 0;
-                }
-                a {
-                    @include transition(all 0.3s ease-in-out);
+                    position: relative;
+                    padding: 0.2rem 1.935rem;
+                    width: 5rem;
+                    height: 5rem;
+                    background: $primary-color;
+                    @extend .flex_center;
+                    color: $dark-color-6;
+                    @include trans-color(color, .3s);
+                    font-size: 2rem;
+                    
+                    &:hover 
+                    {
+                        color: $secondary-color;
+                    }
+                    &.info_link
+                    {
+                        position: relative;
+                        &::before 
+                        {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            @include transform(translateY(-50%));
+                            left: 0;
+                            width: 1px;
+                            height: 100%;
+                            background: $dark-color-1;
+                        }
+                    }
                 }
             }
         }
     }
-  
-}
-
-
-.hero_banner 
-{
-    position: relative;
-    background-image: url("../../images/header-bg.webp");
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    background-position: top center;
-    &::after 
+    .header_main
     {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: $gradient;
-        
-    }
-    .hero_text 
-    {
-       position: absolute;
-       z-index: 10;
-       bottom: 15%;
-       left: 5%;
-       h1 
-       {
-          text-shadow: 1px 2px 5px  $white-color;
-          line-height: 1.2;
-       }
+        padding: 2rem 0;
+        .product_action
+        {
+            gap: 2rem;
+            .badge_box 
+            {
+                position: relative;
+                .badge-action 
+                {
+                    
+                    background: $dark-blue;
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 2rem;
+                    color: $primary-color;
+                  
+                }
+            }
+           
+            .count_badge 
+            {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                background: $primary-color-1;
+                height: 3rem;
+                line-height: 3rem;
+                width: 3rem;
+                text-align: center;
+                @include border-radius(50%);
+            }
+        }
     }
 }
