@@ -11,22 +11,27 @@
         {
             .list_items 
             {
+                display: flex;
+                gap: 0.5rem;
+                flex-wrap: wrap;
                 
                 a 
                 {
                     position: relative;
-                    padding: 0.2rem 1.935rem;
-                    width: 5rem;
-                    height: 5rem;
-                    background: $primary-color;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    background: $dark-blue;
                     @extend .flex_center;
-                    color: $dark-color-6;
+                    color: $white-color-6;
                     @include trans-color(color, .3s);
-                    font-size: 2rem;
+                    @include border-radius(50%);
+                    font-size: 1.6rem;
+
                     
                     &:hover 
                     {
-                        color: $secondary-color;
+                        color: $white-color;
+                        background: $dark-color-8;
                     }
                     &.info_link
                     {
@@ -53,37 +58,8 @@
         .product_action
         {
             gap: 2rem;
-            .badge_box 
-            {
-                position: relative;
-                .badge-action 
-                {
-                    
-                    background: $dark-blue;
-                    width: 5rem;
-                    height: 5rem;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 2rem;
-                    color: $primary-color;
-                  
-                }
-            }
-           
-            .count_badge 
-            {
-                position: absolute;
-                top: -5px;
-                right: -5px;
-                background: $primary-color-1;
-                height: 3rem;
-                line-height: 3rem;
-                width: 3rem;
-                text-align: center;
-                @include border-radius(50%);
-            }
+            flex-wrap: wrap;
+         
         }
     }
 }

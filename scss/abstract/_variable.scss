@@ -5,7 +5,8 @@
 
 // BASIC COLOR
 // ===================================== //
-$primary-color:#FFBF00;
+// $primary-color:#FFBF00;
+$primary-color:#fea500;
 $primary-color-1:#dda80b;
 $secondary-color: #ff9007;
 $dark-blue:#050f23;
@@ -53,7 +54,8 @@ $shadow: 0 0.5rem 2rem rgba($text-color, 0.15) !default;
 // GRADIENT SHADOW
 // ===================================== //
 
-$gradient: linear-gradient($dark-color-3,$dark-color-5);
+$gradient: linear-gradient(45deg,$primary-color,$secondary-color);
+$gradient-1: linear-gradient($primary-color-1,$secondary-color);
 
 // ===================================== //
 // FONT VARIABLES

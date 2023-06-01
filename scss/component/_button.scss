@@ -21,3 +21,23 @@
   .custom-btn:hover {
     background-color: $secondary-color;
   }
+
+  .primary_btn 
+  {
+    position: relative;
+    display:block;
+    padding: 1rem 1.2rem;
+    @include border-radius(0.7rem);
+    color: $dark-color;
+    transition: all .3s;
+    background: $gradient;
+    background-size: 200% !important;
+    @include box-shadow(0 5px 20px $dark-color-1);
+    z-index: 3;
+    border: 2px solid $primary-color;
+    
+    &:hover {
+      background-position-x: 100%;
+      border-color: $light-gray;
+    }
+  }
