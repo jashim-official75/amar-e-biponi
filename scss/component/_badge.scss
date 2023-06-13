@@ -1,0 +1,84 @@
+.custom_badge,
+.custom_badge:before,
+.custom_badge:after,
+.custom_badge .price {
+	height: 5em;
+	width: 5em;
+	background: #d32f2f;
+}
+
+.custom_badge:before,
+.custom_badge:after {
+	content: "";
+	position: absolute;
+}
+
+.custom_badge {
+	margin: 20px auto; /* Centering for demo */
+	position: relative; /* Context */
+	top: 0;
+	left: 0;
+	background-color: #e53935;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	transform-origin: center;
+	transition: 0.3s all ease-out;
+}
+
+.custom_badge:before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(22.5deg);
+	  -moz-transform: rotate(22.5deg);
+	   -ms-transform: rotate(22.5deg);
+	    -o-transform: rotate(22.5deg);
+	       transform: rotate(22.5deg);
+	z-index: 1;
+}
+
+.custom_badge:after {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(-45deg);
+	  -moz-transform: rotate(-45deg);
+	   -ms-transform: rotate(-45deg);
+	    -o-transform: rotate(-45deg);
+	       transform: rotate(-45deg);
+	background-color: #e53935;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.custom_badge .price {
+	padding: 1em 0em;
+	height: 3em; /* height minus padding */
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	-webkit-transform: rotate(-22.5deg);
+	  -moz-transform: rotate(-22.5deg);
+	   -ms-transform: rotate(-22.5deg);
+	    -o-transform: rotate(-22.5deg);
+	       transform: rotate(-22.5deg);
+	z-index: 1; /* important so the text shows up */
+}
+
+.custom_badge .price span {
+  position: relative;
+  z-index: 100;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font: 1.5em/1.4em Sans-Serif;
+  text-transform: uppercase;
+}
+
+.custom_badge .price span.number {
+  font-weight: bold;
+  font-size: 1.625em;
+  line-height: .9em;
+  color: #ffebee;
+}
+
+.custom_badge:hover {
+	transform: matrix3d(1.058,0.38,-0.38,0,-0.38,1.058,-0.38,0,0.38,0.38,0.8464,0,0,0,0,1);
+-webkit-transform: matrix3d(1.058,0.38,-0.38,0,-0.38,1.058,-0.38,0,0.38,0.38,0.8464,0,0,0,0,1);
+}

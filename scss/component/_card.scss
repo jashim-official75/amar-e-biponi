@@ -1,0 +1,97 @@
+.card {
+    background: #fff;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 14px 30px 0 #0000002e;
+  border-radius:20px;
+  margin-bottom: 3rem;
+  
+  &:hover &-image{
+    transform:translatey(10px)
+  }
+  &:hover .round-box{
+    @include transform(translateX(0%) scale(1));
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+  
+  }
+
+    &-image {
+        width: 100%;
+        height: 230px;
+        margin-top: -30px;
+      object-fit:cover;
+      border-radius:20px;
+      transition:transform .2s;
+    }
+
+    &-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    &-price {
+        margin-bottom: 16px;
+
+        span {
+            text-decoration: line-through;
+            font-size: 12px;
+            color: #2021246b;
+            margin-left: 20px;
+        }
+    }
+
+    &-action {
+        position: absolute;
+      width:100%;
+        padding: 12px 30px;
+        gap: 1rem;
+        border-radius: 10px;
+        font-weight: bold;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+     
+        
+      i {
+        color: $white-color;
+        font-size: 2rem;
+      }
+       
+        .round-box {
+            width: 4rem;
+            height: 4rem;
+            background: $dark-color-8;
+            @include border-radius(50%);
+            @extend .flex_center;
+            color: $white-color-6;
+            @include transform(translateX(-40%) scale(0));
+            transition: all 0s ;
+            transform-origin: top;
+            opacity: 0;
+        }
+        &-cart {
+            background: $gradient-2;
+            transition-delay: 0.2s !important;
+          &:hover 
+          {
+            background: $primary-color;
+          }
+            
+        }
+        &-wishlist {
+            &:hover 
+            {
+                background: $red-color;
+            }
+            transition-delay: 0.3s !important;
+            &.loved {
+                background: $red-color;
+            }
+        }
+    }
+
+
+}

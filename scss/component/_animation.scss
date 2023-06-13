@@ -1,0 +1,18 @@
+.stickynav
+{
+    @include animation(stickynav 0.2s  linear forwards);
+}
+
+@include keyframes(stickynav)
+{
+    0%{
+        @include transform(translateY(-100%));
+    }
+    100% {
+        @include transform(translateY(0%));
+    }
+   
+    100% {
+        @include transform(scale(1));
+    }
+}

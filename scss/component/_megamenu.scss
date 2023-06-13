@@ -48,15 +48,6 @@
 }
 
 
-img,
-video {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
 
 .header_bottom {
     width: 100%;
@@ -66,7 +57,7 @@ video {
     z-index: 999;
     border: none;
     outline: none;
-    background: #fafafa;
+    background: $primary-color;
     -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -93,8 +84,9 @@ video {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 66%;
-    flex: 0 0 66%;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    margin-left: auto;
 }
 .header-item-right {
     display: -webkit-box;
@@ -111,6 +103,7 @@ video {
     justify-content: flex-end;
 }
 .header-item-right .menu-icon {
+    position: relative;
     font-size: 3.35rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -130,6 +123,21 @@ video {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+.header-item-right .menu-icon .number-badge
+{
+    position: absolute;
+    bottom: 0.5rem;
+    right: -0.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: $dark-color;
+    @include border-radius(50%);
+    font-size: 1.2rem;
+    color: $white-color;
+    text-align: center;
+    line-height: 1.8rem;
+    @include box-shadow($shadow , 0 0 0 2px $white-color-4);
+}
 .header_bottom .menu > ul > li {
     display: inline-block;
     line-height: 3.125rem;
@@ -145,7 +153,7 @@ video {
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    color: #121212;
+    color: $text-primary;
     text-transform: capitalize;
     text-rendering: optimizeLegibility;
     -webkit-transition: color 0.3s ease-in-out;
@@ -165,7 +173,7 @@ video {
     visibility: hidden;
     border-radius: 0.25rem;
     border-top: 3px solid $secondary-color;
-    background: #fafafa;
+    background: $white-color;
     -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     -webkit-transition: all 0.5s ease-in-out;
@@ -184,7 +192,7 @@ video {
     padding: 0.75rem 0;
     border: none;
     outline: none;
-    color: #121212;
+    color: $text-primary;
     text-transform: capitalize;
     text-rendering: optimizeLegibility;
     -webkit-transition: all 0.3s ease-in-out;
@@ -214,7 +222,7 @@ video {
     padding: 0.5rem;
     border: none;
     outline: none;
-    color: #121212;
+    color: $text-primary;
     text-transform: capitalize;
     text-rendering: optimizeLegibility;
     -webkit-transition: color 0.3s ease-in-out;
@@ -266,11 +274,11 @@ video {
 }
 .header_bottom .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a:hover,
 .header_bottom .menu > ul > li .menu-subs > ul > li > a:hover {
-    color: $primary-color;
+    color: $red-color;
 }
 .header-item-right a:hover,
 .header_bottom .menu > ul > li:hover > a {
-    color: $primary-color;
+    color: $red-color;
 }
 @media only screen and (min-width: 993px) {
     .header_bottom  .menu > ul > li.menu-item-has-children:hover .menu-subs {

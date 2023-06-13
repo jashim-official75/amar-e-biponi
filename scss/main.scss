@@ -35,7 +35,9 @@
 // IMPORT COMPONENTS
 // =====================
 
-@import "../scss/component/navigation";   
+@import "../scss/component/animation";   
+@import "../scss/component/badge";   
+@import "../scss/component/navigation"; 
 @import "../scss/component/megamenu";   
 @import "../scss/component/product_slider";   
 @import "../scss/component/searchbar";   
@@ -58,3 +60,4 @@
 // IMPORT RESPONSIVE
 // =====================
 @import '../scss/responsive/responsive';
+

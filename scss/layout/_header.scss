@@ -20,9 +20,9 @@
                     position: relative;
                     width: 3.5rem;
                     height: 3.5rem;
-                    background: $dark-blue;
+                    background: $secondary-color;
                     @extend .flex_center;
-                    color: $white-color-6;
+                    color: $dark-color;
                     @include trans-color(color, .3s);
                     @include border-radius(50%);
                     font-size: 1.6rem;
@@ -54,7 +54,11 @@
     }
     .header_main
     {
-        padding: 2rem 0;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
         .product_action
         {
             gap: 2rem;
@@ -63,3 +67,4 @@
         }
     }
 }
+

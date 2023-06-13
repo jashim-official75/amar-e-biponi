@@ -1,6 +1,7 @@
 .search_form
 {
     position: relative;
+    width: 600px;
     form 
     {
        .searchBox
@@ -9,7 +10,6 @@
         background-color: $white-color;
         height: 5.5rem;
         border: 0.1rem solid $dark-color-1;
-        @include box-shadow(0 0.5rem 2.5rem $dark-color-1);
         @include border-radius(0.7rem);
         overflow: hidden;
         display: flex;
@@ -34,7 +34,7 @@
             outline: 0;
             background: transparent;
             width: 100%;
-            max-width: 60rem;
+            max-width: 100%;
             padding-left: 1rem;
         }
         .submit-btn 

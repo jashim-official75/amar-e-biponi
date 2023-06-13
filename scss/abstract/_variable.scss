@@ -7,10 +7,14 @@
 // ===================================== //
 // $primary-color:#FFBF00;
 $primary-color:#fea500;
-$primary-color-1:#dda80b;
+$primary-color-1:#FFBF00;
+$primary-color-2:#f8f800;
 $secondary-color: #ff9007;
+$red-color:#FF443D;
 $dark-blue:#050f23;
 $text-color:#555555;
+$text-primary:#050f23 ;
+$text-secondary:#040810;
 $dark-gray:#AEAEAE;
 $light-gray:#F5F5F5;
 $light-gray-1:#f1f1f1fc;
@@ -56,6 +60,7 @@ $shadow: 0 0.5rem 2rem rgba($text-color, 0.15) !default;
 
 $gradient: linear-gradient(45deg,$primary-color,$secondary-color);
 $gradient-1: linear-gradient($primary-color-1,$secondary-color);
+$gradient-2:   linear-gradient(to top, #224aff, #6984ff);;
 
 // ===================================== //
 // FONT VARIABLES

@@ -1,3 +1,30 @@
+
+
+// sticky menu
+
+
+function stickyMenu() { 
+    var sticky = document.getElementById("sticky");
+    if(window.pageYOffset>420)
+    {
+       sticky.classList.add("stickyStyle");
+    }
+    else{
+       sticky.classList.remove("stickyStyle");
+    }
+  }
+  window.onscroll=function(){
+    stickyMenu();
+  }
+
+
+
+
+
+
+
+
+
 const menu = document.querySelector('.menu');
 const menuSection = menu.querySelector('.menu-section');
 const menuArrow = menu.querySelector('.menu-mobile-arrow');
@@ -53,3 +80,9 @@ window.onresize = function () {
       }
    }
 };
+
+
+document.querySelectorAll(".card-action-wishlist")
+  .forEach((icon) => {
+    icon.onclick = () => icon.classList.toggle("loved");
+  });

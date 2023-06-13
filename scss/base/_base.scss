@@ -5,7 +5,6 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-overflow-x: hidden;
 }
 ul 
 {
@@ -20,11 +19,9 @@ body {
     font-size: 1.6rem;
     color: $text-color;
     transition: all .3s;
-    height: 10000px;
 }
 html,body{
-    overflow-x: auto;
-    overflow-y: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
   }
 html {
@@ -201,4 +198,14 @@ template {
 ::placeholder
 {
     color: $dark-color-4;
+}
+
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
 }

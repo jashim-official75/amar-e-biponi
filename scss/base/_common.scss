@@ -1,20 +1,27 @@
+// ========================
+// variables
+// ========================
+@import "../abstract/variable";
+
+// ========================
+// COMPONENTS
+// ========================
+@import "../utilities/animation";
+@import '../utilities/transition';
+
+
+
+
 
 
 .section {
-  padding: 40px 0;
+  padding: 5rem 0;
 }
 
 .text-center {
   text-align: center;
 }
 
-.text-primary {
-  color: #050f23;
-}
-
-.text-secondary {
-  color: #040810;
-}
 
 .small-text
 {
@@ -38,4 +45,35 @@
   width: 3rem;
   @extend .flex_center;
  
+}
+
+.stickyStyle{
+  position: fixed;
+  background: $white-color;
+  z-index: 20000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  @extend .stickynav;
+ transition: all 0s ease-in-out;
+ box-shadow: $shadow;
+ padding: 1rem 3rem !important;
+}
+
+
+.section-title 
+{
+  position: relative;
+  padding: 1rem 0 1rem 2rem;
+  &::after 
+  {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $red-color;
+    width: 0.4rem;
+    height: 100%;
+    
+  }
 }
