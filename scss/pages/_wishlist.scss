@@ -1,0 +1,114 @@
+#wishlist_part{
+    background: $white-color;
+    padding: 2rem;
+    width: 90%;
+    margin: 5rem auto;
+    @include box-shadow($shadow-2);
+    h1 
+    {
+        text-align: center;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        padding: 2rem 0 5rem;
+        justify-content: center;
+        gap: 1rem;
+        i {
+            color: $red-color;
+        }
+    }
+    .wishlist_item {
+        position: relative;
+        display: flex;
+        height: 18rem;
+        width: 100%;
+        background: $half-white;
+        @include box-shadow($shadow-1);
+        gap: 1rem;
+        @include border-radius(1.5rem);
+        margin: 1rem 0;
+        &-left {
+            img 
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+        @include border-radius(1.5rem 0 0 1.5rem );
+
+            }
+        }
+        &-right {
+            padding: 1rem 0;
+            .product_title {
+                h3 {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                }
+            }
+            .product_price {
+                h4 {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: $red-color;
+                    span 
+                    {
+                        color: $dark-color-6;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            .product_quantity {
+                #product_quantity {
+                    width: 40%;
+                   padding: 1rem;
+                    @include border-radius(0.5rem);
+                    border: 1px solid $red-color;
+                    text-align: center;
+                    margin: 1rem 0;
+                }
+            }
+            .stock_status 
+            {
+                position: absolute;
+
+                top: 0.5rem;
+                left: 1rem;
+               span 
+               {
+                background: $dark-color-6;
+                color: $primary-color-2;
+                padding: 0.5rem 1rem;
+                @include border-radius(1.5rem);
+                font-size: 0.8rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+               }
+            }
+        }
+        .delete_icon {
+            position: absolute;
+            top: -1rem;
+            right: -1rem;
+            background: $dark-color-8;
+           @extend .flex_center;
+            @include border-radius(50%);
+            @include transform (scale(0.6));
+            @include transition ( all .3s);
+            cursor: pointer;
+            &:hover 
+            {
+                color: $red-color;
+            @include transform (scale(0.8));
+            background: $dark-color;
+
+            }
+            width: 3rem;
+            height: 3rem;
+            color: $white-color-8;
+            i 
+            {
+                font-size: 1rem;
+            }
+        }
+    }
+}

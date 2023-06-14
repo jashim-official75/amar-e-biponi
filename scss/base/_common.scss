@@ -1,0 +1,79 @@
+// ========================
+// variables
+// ========================
+@import "../abstract/variable";
+
+// ========================
+// COMPONENTS
+// ========================
+@import "../utilities/animation";
+@import '../utilities/transition';
+
+
+
+
+
+
+.section {
+  margin: 5rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.small-text
+{
+  font-size: clamp(1.2rem , 2vw , 1.6rem);
+}
+
+.gap-10
+{
+  gap: 1rem;
+}
+.flex_center 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.small-icon 
+{
+  font-size: 1.6rem;
+  width: 3rem;
+  width: 3rem;
+  @extend .flex_center;
+ 
+}
+
+.stickyStyle{
+  position: fixed;
+  background: $white-color;
+  z-index: 20000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  @extend .stickynav;
+ transition: all 0s ease-in-out;
+ box-shadow: $shadow;
+ padding: 1rem 3rem !important;
+}
+
+
+.section-title 
+{
+  position: relative;
+  padding: 1rem 0 1rem 2rem;
+  &::after 
+  {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $red-color;
+    width: 0.4rem;
+    height: 100%;
+    
+  }
+}

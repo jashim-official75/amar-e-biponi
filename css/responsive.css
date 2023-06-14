@@ -1,0 +1,8 @@
+@media only screen and (max-width : 768px) {
+  #header_area nav ul li {
+    padding-left: 1.2rem;
+  }
+  #header_area .logo img {
+    width: 150px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

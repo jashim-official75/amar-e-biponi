@@ -1,0 +1,70 @@
+#header_area 
+{
+    .header_top {
+        padding: 1rem 0;
+        background: $light-gray;
+        .order_message 
+        {
+           color: $text-color;
+        }
+        .order_info 
+        {
+            .list_items 
+            {
+                display: flex;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+                
+                a 
+                {
+                    position: relative;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    background: $secondary-color;
+                    @extend .flex_center;
+                    color: $dark-color;
+                    @include trans-color(color, .3s);
+                    @include border-radius(50%);
+                    font-size: 1.6rem;
+
+                    
+                    &:hover 
+                    {
+                        color: $white-color;
+                        background: $dark-color-8;
+                    }
+                    &.info_link
+                    {
+                        position: relative;
+                        &::before 
+                        {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            @include transform(translateY(-50%));
+                            left: 0;
+                            width: 1px;
+                            height: 100%;
+                            background: $dark-color-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header_main
+    {
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .product_action
+        {
+            gap: 2rem;
+            flex-wrap: wrap;
+         
+        }
+    }
+}
+

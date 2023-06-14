@@ -1,0 +1,65 @@
+// =====================
+// IMPORT ASBSTRACT
+// =====================
+
+@import "../scss/abstract/variable";
+
+// =====================
+// IMPORT BASE
+// =====================
+@import "../scss/base/base";
+@import "../scss/base/typography";
+@import "../scss/base/common";
+
+// =====================
+// IMPORT UTILITIES
+// =====================
+
+@import "../scss/utilities/animation";
+@import "../scss/utilities/appearance";
+@import "../scss/utilities/box-shadow";
+@import "../scss/utilities/calc";
+@import "../scss/utilities/clearfix";
+@import "../scss/utilities/keyframes";
+@import "../scss/utilities/overflow";
+@import "../scss/utilities/placeholder";
+@import "../scss/utilities/prefixer";
+@import "../scss/utilities/responsive";
+@import "../scss/utilities/transform";
+@import "../scss/utilities/visibility";
+@import "../scss/utilities/transition";
+@import "../scss/utilities/border-radius";
+
+
+// =====================
+// IMPORT COMPONENTS
+// =====================
+
+@import "../scss/component/animation";   
+@import "../scss/component/badge";   
+@import "../scss/component/navigation"; 
+@import "../scss/component/megamenu";   
+@import "../scss/component/product_slider";   
+@import "../scss/component/searchbar";   
+@import "../scss/component/logo";
+@import "../scss/component/button";
+@import "../scss/component/card";
+
+// =====================
+// IMPORT LAYOUT
+// =====================
+@import '../scss/layout/header';
+@import '../scss/layout/footer';
+
+
+// =====================
+// IMPORT PAGES
+// =====================
+@import '../scss/pages/wishlist';
+@import '../scss/pages/cart';
+
+// =====================
+// IMPORT RESPONSIVE
+// =====================
+@import '../scss/responsive/responsive';
+

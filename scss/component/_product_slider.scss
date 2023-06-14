@@ -1,0 +1,107 @@
+#slider_part
+{
+ .product_slider
+ {
+    position: relative;
+    width: 100%;
+    min-height: 505px;
+    @include border-radius(1rem);
+    overflow: hidden;
+    border: 1px solid $light-gray;
+    @include box-shadow($shadow);
+    .product_slider-item
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+ }   
+ .top_rated-products {
+    .productImg 
+    {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+        @include border-radius(1rem);
+        border: 1px solid $light-gray;
+        @include box-shadow($shadow);
+        
+        &:hover 
+        {
+            img 
+            {
+                @include transform(scale(1.2));
+                filter: brightness(100%);
+            }
+        }
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition(transform 1s, filter 1.2s ease-in-out);
+            filter: brightness(110%);
+            transform-origin: 50% 65%;
+            @include border-radius(1rem);
+       
+        }
+        .new-badge 
+        {
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            background: $primary-color-2;
+            padding: 0.3rem 0.8rem;
+            color: $dark-color;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            @include border-radius(0.7rem);
+            @include box-shadow($shadow);
+            @include transform(scale(0.6));
+        }
+    }
+ }
+}
+
+// .carousel-indicators li {
+//     background-color: #bbb; /* Set the background color of the dots */
+//     border-color: #bbb; /* Set the border color of the dots */
+//     opacity: 1; /* Set the opacity of the dots */
+//     width: 15px !important; /* Set the width of the dots */
+//     height: 15px !important; /* Set the height of the dots */
+//     border-radius: 50%; /* Make the dots circular */
+//   }
+  
+.carousel-dark .carousel-indicators [data-bs-target] {
+	background-color: $secondary-color;
+}
+
+  .carousel-indicators [data-bs-target] {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	border: 0;
+    border-radius: 50%;
+    background: green;
+    margin: 8px;
+
+}
+
+.carousel-indicators .active {
+	opacity: 1;
+    background: $primary-color-1 !important;
+    @include transform(scale(1.4));
+    outline: 1px solid $white-color !important;
+    border: 1px solid $white-color !important;
+    outline-offset: 1px;
+}

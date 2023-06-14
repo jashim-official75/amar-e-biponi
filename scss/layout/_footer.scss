@@ -1,0 +1,120 @@
+
+/* //........ Footer ...... // */
+
+footer {
+    width: 100%;
+    background: $dark-blue;
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0;
+        flex-wrap: wrap;
+        h4 
+        {
+            position: relative;
+            color: $white-color;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            font-size: 18px;
+            &::after 
+            {
+                content: '';
+                position: absolute;
+                bottom: -0.8rem;
+                left: 0;
+                width: 3rem;
+                height: 1px;
+                background: $red-color;
+
+            }
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: $dark-gray;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            @include transition(color .3s);
+            &:hover {
+                color: $red-color;
+            }
+        }
+    }
+}
+
+ 
+    
+
+
+
+
+
+
+.footer-container .content_1 p,
+.footer-container .content_4 p {
+    color: $dark-gray;
+    margin: 25px 0;
+    font-size: 14px;
+}
+.footer-container .content_4 .socail_info i {
+    color: $dark-color-8;
+    font-size: 1.6rem;
+}
+.footer-container .content_4 .socail_info .info_link 
+{
+    background: $light-gray;
+    width: 4rem;
+    height: 4rem;
+    @include border-radius(50%);
+    @extend .flex_center;
+    &:hover {
+        background: $primary-color-2;
+    }
+}
+
+.footer-container .content_4 input[type="email"] {
+    background-color: $white-color;
+    border: none;
+    color: $dark-color;
+    outline: none;
+    padding: 15px;
+}
+.footer-container .content_4 #email-submit {
+   display: none;
+}
+
+.footer-container .content_4 .f-mail form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container .content_4 .lni {
+    font-size: 3rem;
+    color: $white-color;
+}
+.footer-container .content_4  .email_submit 
+{
+    background: $secondary-color;
+    width: 5rem;
+    text-align: center;
+    height: 5rem;
+    text-align: center;
+    @extend .flex_center;
+    
+}
+.f-design p {
+    width: 100%;
+    color: $white-color-2;
+
+}
+
+.f-design .f-design-txt {
+    border-top: 1px solid $white-color-4;
+    padding: 25px 0;
+    font-size: 14px;
+    color:$dark-color;
+    text-align: center;
+}
+
