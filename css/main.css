@@ -222,6 +222,12 @@ video {
   text-align: center;
 }
 
+.d-flex, #header_area .header_main-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .small-text {
   font-size: clamp(1.2rem, 2vw, 1.6rem);
 }
@@ -335,6 +341,12 @@ a:hover {
 
 .text-center {
   text-align: center;
+}
+
+.d-flex, #header_area .header_main-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .small-text {
@@ -1393,11 +1405,16 @@ a:hover {
 
 .custom-btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #fea500;
+  padding: 1.6rem 2rem;
+  background-color: #FF443D;
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .custom-btn:hover {
@@ -1507,7 +1524,10 @@ a:hover {
 
 #header_area .header_top {
   padding: 1rem 0;
-  background: #F5F5F5;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
 }
 #header_area .header_top .order_message {
   color: #555555;
@@ -1545,11 +1565,11 @@ a:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 #header_area .header_main {
-  padding: 1rem 0;
-  display: flex;
-  align-items: center;
+  background: #fff;
+}
+#header_area .header_main-wrapper {
   justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 1rem 0;
 }
 #header_area .header_main .product_action {
   gap: 2rem;
@@ -1757,6 +1777,49 @@ footer .footer-container a:hover {
 }
 #wishlist_part .wishlist_item .delete_icon i {
   font-size: 1rem;
+}
+
+#accounet_part .account_wrapper {
+  max-width: 600px;
+  margin: 5rem auto;
+}
+#accounet_part .signup,
+#accounet_part .login {
+  width: 50%;
+  background: #fea500;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+#accounet_part .signup-form,
+#accounet_part .login-form {
+  background: #fff;
+  padding: 2rem;
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0.5rem 2rem rgba(85, 85, 85, 0.15);
+}
+#accounet_part .input {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #555555;
+  font-size: 1.4rem;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+#accounet_part .input:focus {
+  border: 1px solid #FF443D;
 }
 
 @media only screen and (max-width : 768px) {

@@ -1,0 +1,55 @@
+
+#accounet_part {
+    .account_wrapper {
+        max-width: 600px;
+        margin: 5rem auto;
+    }
+    .signup,
+    .login{
+      width: 50%;
+      background: $primary-color;
+      float: left;
+      height: 60px;
+      line-height: 60px;
+      color: $dark-color;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .signup-form,
+.login-form{
+  background: $white-color;
+  padding: 2rem;
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  @include box-shadow($shadow);
+}
+.input{
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: $half-white;
+    margin-bottom: 1rem;
+    border: 1px solid $dark-color-2;
+    color: $text-color;
+    font-size: 1.4rem;
+    outline: none;
+    @include border-radius(0.5rem);
+    @include transition(all .5s ease);
+    &:focus {
+        border: 1px solid $red-color;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

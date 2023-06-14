@@ -17,7 +17,28 @@ function stickyMenu() {
     stickyMenu();
   }
 
+// account toggle
 
+$(".login-form").hide();
+$(".login").css("background", "none");
+
+$(".login").click(function(){
+  $(".signup-form").hide();
+  $(".login-form").show();
+  $(".signup").css("background", "none");
+  $(".login").css("background", "#fea500");
+});
+
+$(".signup").click(function(){
+  $(".signup-form").show();
+  $(".login-form").hide();
+  $(".login").css("background", "none");
+  $(".signup").css("background", "#fea500");
+});
+
+$(".btn").click(function(){
+  $(".input").val("");
+});
 
 
 
